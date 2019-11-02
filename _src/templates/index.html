@@ -1,17 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Adalab Web Starter Kit</title>
-    <link rel="icon" href="./favicon.png" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-  </head>
-  <body>
-    <div class="page">
-      <partial src="_header.html" label="Header"></partial>
-      <partial src="_main.html" label="Main"></partial>
-      <partial src="_link.html" aClass="link__adalab" text="Adalab" url="https://adalab.es"></partial>
-      <partial src="_link.html" aClass="link__github" text="GitHub" url="https://github.com"></partial>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Spotify</title>
+  <link rel="icon" href="./favicon.png" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <img src="./assets/images/logo.png" alt="logo spotify">
     </div>
-  </body>
+    <nav class="header__menu">
+      <ul>
+        <li class="header__menu item"><a href="#">Premium</a></li>
+        <li class="header__menu item"><a href="#">Ayuda</a></li>
+        <li class="header__menu item"><a href="#">Descargar</a></li>
+        <li class="header__menu item"><a href="#">Registrate</a></li>
+        <li class="header__menu item"><a href="#">Iniciar Sesion</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="main__hero">
+      <h1>Prueba gratis 3 meses</h1>
+      <h2>Escucha millones de canciones sin anuncios, a la carta y sin conexion.</h2>
+      <h3><a href="ver planes"></a>Rigen terminos y condiciones. Los tres mesesno estan disponibles si ya has probado
+        Premium.</h3>
+    </div>
+    <div class="premium">
+      <h1>Por que pasarte a Premium?</h1>
+      <ul class="premium__features">
+        <li class="premium__features item"><img src="./assets/images/benefit-1.png" alt="descarga musica">
+          <div class="premium__features__text">
+            <span><strong>Descarga musica</strong></span>
+            <p>Llevala siempre contigo</p>
+          </div>
+        </li>
+        <li class="premium__features item"><img src="./assets/images/benefit-2.png" alt="Sin anuncios">
+          <div class="premium__features__text">
+            <span><strong>Sin anuncios</strong></span>
+            <p>Disfruta de musica sin interrupciones</p>
+          </div>
+        </li>
+        <li class="premium__features item"><img src="./assets/images/benefit-3.png" alt="Escucha lo que quieras">
+          <div class="premium__features__text">
+            <span><strong>Escucha lo que quieras</strong></span>
+            <p>Incluso en el movil</p>
+          </div>
+        </li>
+        <li class="premium__features item"><img src="./assets/images/benefit-4.png"
+            alt="Salta todas las canciones que quieras">
+          <div class="premium__features__text">
+            <span><strong>Salta todas las canciones que quieras</strong></span>
+            <p>Simplemente dale a la siguiente</p>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+
+  </main>
+  <footer class="footer">
+    <nav class="footer__menu">
+      <ul>
+        <li class="footer__menu item"><a href="#">Legal</a></li>
+        <li class="footer__menu item"><a href="#">Cookies</a></li>
+        <li class="footer__menu item"><a href="#">Informacion sobre los anuncios</a></li>
+      </ul>
+    </nav>
+    <span>Espana <img src="./assets/images/es.svg" alt="logo bandera Espana"></span>
+    <span>2019 Spotify AB</span>
+  </footer>
+</body>
+
 </html>
