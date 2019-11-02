@@ -1,6 +1,36 @@
-@import 'core/settings';
-@import 'core/links';
+@import 'vendors/normalize.scss';
 
-body {
-	background-color: aquamarine;
+html {
+  font-family: Circular, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.header{
+	background-color: black;
+	width: 100%;
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+.header__logo__img{
+	height: 50px;
+	width: 150px;
+}
+
+.linea{
+	display: flex;
+	flex-direction: row;
+}
+
+.header__menu__item{
+	
+
+
+}
+
+.header__menu__link{
+	color:white;
 }

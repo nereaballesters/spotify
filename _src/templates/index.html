@@ -3,23 +3,26 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Spotify</title>
   <link rel="icon" href="./favicon.png" />
+  <link rel="stylesheet" href="./vendors/normalize.scss">
   <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
 
 <body>
   <header class="header">
     <div class="header__logo">
-      <img src="./assets/images/logo.png" alt="logo spotify">
+      <img class="header__logo__img" src="./assets/images/logo.png" alt="logo spotify">
     </div>
     <nav class="header__menu">
-      <ul>
-        <li class="header__menu item"><a href="#">Premium</a></li>
-        <li class="header__menu item"><a href="#">Ayuda</a></li>
-        <li class="header__menu item"><a href="#">Descargar</a></li>
-        <li class="header__menu item"><a href="#">Registrate</a></li>
-        <li class="header__menu item"><a href="#">Iniciar Sesion</a></li>
+      <ul class="linea">
+        <li class="header__menu item"><a class="header__menu__link" href="#">Premium</a></li>
+        <li class="header__menu item"><a class="header__menu__link" href="#">Ayuda</a></li>
+        <li class="header__menu item"><a class="header__menu__link" href="#">Descargar</a></li>
+        <li class="header__menu item"><a class="header__menu__link" href="#">Registrate</a></li>
+        <li class="header__menu item"><a class="header__menu__link" href="#">Iniciar Sesion</a></li>
       </ul>
     </nav>
   </header>
