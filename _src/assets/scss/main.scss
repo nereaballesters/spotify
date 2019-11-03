@@ -6,13 +6,13 @@ html {
 }
 
 .header{
+	top: 0px;
 	background-color: black;
 	width: 100%;
 	position: fixed;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	
 }
 
 .header__logo__img{
@@ -25,12 +25,130 @@ html {
 	flex-direction: row;
 }
 
-.header__menu__item{
-	
-
-
-}
-
-.header__menu__link{
+a{
 	color:white;
 }
+
+//main//
+.main{
+	margin-top: 54px;
+}
+
+.main__hero{
+	background-color:#509bf5;
+	height: 50vh;
+	color: white;
+}
+
+.button {
+  text-decoration: none;
+  line-height: 60px;
+  padding: 0 30px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: green;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.22);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.29), inset 1px 1px 1px rgba(255, 255, 255, 0.44);
+}
+
+.button:hover {
+  background: #6b8f1a;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.29), inset 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+.button:active {
+  background: green;
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.29), inset 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+//premium//
+
+.premium {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+h1{
+	text-align: center;
+}
+.premium__features{
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.premium__features__item{
+	display: flex;
+  	align-items: flex-start;
+  	padding: 30px;
+  	list-style: none;
+  	border-radius: 30px;
+  	border: transparent solid 5px;
+  	transition: background-color 2s linear;
+}
+
+.premium__features__text {
+  padding: 16px 10px 0 10px;
+}
+
+.premium__features__tittle {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.premium__features__des {
+  font-size: 16px;
+}
+
+.premium__features__img {
+  width: 97px;
+}
+
+
+@media all and (min-width: 1200px) {
+  .premium {
+    max-width: 1200px;
+  }
+
+  .premium__features {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .premium__features__item {
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//footer//
+.footer{
+	width: 100%;
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	}
+
