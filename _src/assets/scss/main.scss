@@ -15,9 +15,18 @@ html {
 	align-items: center;
 }
 
+.header__menu{
+	margin-right: 20px;
+
+}
+
+.header__menu__item{
+	padding: 10px;
+}
+
 .header__logo__img{
-	height: 50px;
 	width: 150px;
+	margin-left: 20px;
 }
 
 .linea{
@@ -31,13 +40,29 @@ a{
 
 //main//
 .main{
-	margin-top: 54px;
+	margin-top: 70px;
 }
 
 .main__hero{
 	background-color:#509bf5;
 	height: 50vh;
 	color: white;
+}
+
+.main__hero__texts{
+	margin-left: 20px;
+}
+
+.main__hero__tittle1{
+	font-size: 50px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+.main__hero__img{
+	width: 320px;
+	margin-left: 900px;
+	margin-top: -213px;
 }
 
 .button {
@@ -50,17 +75,16 @@ a{
   background: green;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.22);
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.29), inset 1px 1px 1px rgba(255, 255, 255, 0.44);
-}
 
-.button:hover {
-  background: #6b8f1a;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.29), inset 0px 0px 2px rgba(0, 0, 0, 0.5);
-}
-.button:active {
-  background: green;
-  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.29), inset 1px 1px 3px rgba(0, 0, 0, 0.8);
-}
-
+	&:hover {
+  	background: #6b8f1a;
+  	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.29), inset 0px 0px 2px rgba(0, 0, 0, 0.5);
+	}
+	&:active {
+  	background: green;
+  	box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.29), inset 1px 1px 3px rgba(0, 0, 0, 0.8);
+	}
+  }
 //premium//
 
 .premium {
@@ -125,30 +149,39 @@ h1{
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //footer//
 .footer{
 	width: 100%;
 	background-color: black;
 	color: white;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	}
 
+.footer__menu{
+	flex-grow: 1;
+	margin-left: 20px;
+}
+
+.footer__menu__list{
+	display: flex;
+	position: relative;
+}
+
+.footer__menu__item{
+	padding: 15px;
+}
+
+.footer__text{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding: 10px;
+	margin-right: 20px;
+}
+
+.footer__img{
+	width: 30px;
+}
